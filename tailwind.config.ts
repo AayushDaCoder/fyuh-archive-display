@@ -62,7 +62,7 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['Inter', 'Helvetica Neue', 'sans-serif'],
+        sans: ['Public Sans', 'sans-serif'],
       },
       letterSpacing: {
         wide: '0.02em',
