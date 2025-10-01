@@ -15,14 +15,14 @@ const categories = [
 
 const CategoryNav = () => {
   return (
-    <nav className="border-b border-[#e5e5e5] bg-[#f5f5f5]">
+    <nav className="border-b border-[#e5e5e5] bg-white">
       <div className="mx-auto max-w-[1600px] px-8">
         <ul className="flex items-center justify-start gap-8 py-3 overflow-x-auto">
           {categories.map((category) => (
             <li key={category}>
               <a
                 href="#"
-                className="whitespace-nowrap text-[11px] font-medium uppercase tracking-[0.12em] text-[#1a1a1a] transition-opacity hover:opacity-60"
+                className="whitespace-nowrap text-[10px] font-medium uppercase tracking-[0.12em] text-[#1a1a1a] transition-opacity hover:opacity-60"
               >
                 {category}
               </a>
