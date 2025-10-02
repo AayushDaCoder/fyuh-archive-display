@@ -21,7 +21,7 @@ const Header = () => {
             </Link>
 
             {/* Center Navigation */}
-            <nav className="hidden md:flex gap-12">
+            <nav className="flex gap-6 md:gap-12">
               <Link to="/" className="text-[10px] font-medium uppercase tracking-[0.15em] hover:opacity-60">
                 HOME
               </Link>

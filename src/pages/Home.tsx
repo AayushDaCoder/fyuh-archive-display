@@ -26,11 +26,13 @@ const Home = () => {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="bg-[#f5f5f5] py-32 md:py-48">
+        <section className="bg-[#f5f5f5] py-12 md:py-16">
           <div className="mx-auto max-w-[1600px] px-8">
-            <h1 className="text-center text-[28px] md:text-[36px] font-bold tracking-[0.3em] text-[#1a1a1a]">
-              DIGITAL
-            </h1>
+            <div className="flex aspect-video items-center justify-center bg-[#2a2a2a]">
+              <span className="text-[10px] font-medium uppercase tracking-[0.15em] text-white opacity-30">
+                VIDEO PLACEHOLDER
+              </span>
+            </div>
           </div>
         </section>
 
@@ -118,23 +120,6 @@ const Home = () => {
           </div>
         </section>
 
-        {/* Store Images Section */}
-        <section className="bg-[#f5f5f5] py-12">
-          <div className="mx-auto max-w-[1600px] px-8">
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-              {[1, 2, 3].map((i) => (
-                <div
-                  key={i}
-                  className="flex aspect-[4/5] items-center justify-center bg-[#2a2a2a]"
-                >
-                  <span className="text-[10px] font-medium uppercase tracking-[0.15em] text-white opacity-30">
-                    STORE IMAGE
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
       </main>
       <Footer />
     </div>
