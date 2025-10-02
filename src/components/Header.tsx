@@ -16,7 +16,7 @@ const Header = () => {
           <div className="flex items-center justify-between py-3.5">
             {/* Logo */}
             <a href="/" className="text-lg font-bold tracking-[0.2em]">
-              BLUORND
+              FYUH
             </a>
 
             {/* Center Navigation */}
