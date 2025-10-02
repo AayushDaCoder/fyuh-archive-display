@@ -5,10 +5,13 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { useState } from "react";
 
-const FilterBar = () => {
-  const [selectedSize, setSelectedSize] = useState<string | null>(null);
+interface FilterBarProps {
+  selectedSize: string | null;
+  onSizeChange: (size: string | null) => void;
+}
+
+const FilterBar = ({ selectedSize, onSizeChange }: FilterBarProps) => {
   const sizes = ["XS", "S", "M", "L", "XL"];
 
   return (
@@ -32,10 +35,16 @@ const FilterBar = () => {
                 <ChevronDown className="h-3 w-3" />
               </DropdownMenuTrigger>
               <DropdownMenuContent className="bg-white border border-[#e5e5e5] z-50">
+                <DropdownMenuItem
+                  onClick={() => onSizeChange(null)}
+                  className="text-[10px] uppercase tracking-[0.12em] cursor-pointer hover:bg-[#f5f5f5]"
+                >
+                  ALL SIZES
+                </DropdownMenuItem>
                 {sizes.map((size) => (
                   <DropdownMenuItem
                     key={size}
-                    onClick={() => setSelectedSize(size)}
+                    onClick={() => onSizeChange(size)}
                     className="text-[10px] uppercase tracking-[0.12em] cursor-pointer hover:bg-[#f5f5f5]"
                   >
                     {size}

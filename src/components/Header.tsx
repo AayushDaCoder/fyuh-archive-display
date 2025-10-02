@@ -1,4 +1,4 @@
-import { Search, ShoppingBag } from "lucide-react";
+import { ShoppingBag } from "lucide-react";
 
 const Header = () => {
   return (
@@ -20,23 +20,20 @@ const Header = () => {
             </a>
 
             {/* Center Navigation */}
-            <nav className="flex gap-12">
-              <a href="#" className="text-[10px] font-medium uppercase tracking-[0.15em] hover:opacity-60">
-                NEW IN
+            <nav className="hidden md:flex gap-12">
+              <a href="/" className="text-[10px] font-medium uppercase tracking-[0.15em] hover:opacity-60">
+                HOME
+              </a>
+              <a href="/" className="text-[10px] font-medium uppercase tracking-[0.15em] hover:opacity-60">
+                ALL CLOTHING
               </a>
               <a href="#" className="text-[10px] font-medium uppercase tracking-[0.15em] hover:opacity-60">
-                APPAREL
-              </a>
-              <a href="#" className="text-[10px] font-medium uppercase tracking-[0.15em] hover:opacity-60">
-                STORES
+                STORY
               </a>
             </nav>
 
             {/* Right Actions */}
-            <div className="flex items-center gap-6">
-              <button aria-label="Search" className="hover:opacity-60">
-                <Search className="h-4 w-4" />
-              </button>
+            <div className="flex items-center gap-4 md:gap-6">
               <a href="#" className="text-[10px] font-medium uppercase tracking-[0.15em] hover:opacity-60">
                 LOGIN
               </a>
