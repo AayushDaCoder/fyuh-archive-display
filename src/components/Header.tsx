@@ -1,4 +1,5 @@
 import { ShoppingBag } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -15,21 +16,21 @@ const Header = () => {
         <div className="mx-auto max-w-[1600px] px-8">
           <div className="flex items-center justify-between py-3.5">
             {/* Logo */}
-            <a href="/" className="text-lg font-bold tracking-[0.2em]">
+            <Link to="/" className="text-lg font-bold tracking-[0.2em]">
               FYUH
-            </a>
+            </Link>
 
             {/* Center Navigation */}
             <nav className="hidden md:flex gap-12">
-              <a href="/" className="text-[10px] font-medium uppercase tracking-[0.15em] hover:opacity-60">
+              <Link to="/" className="text-[10px] font-medium uppercase tracking-[0.15em] hover:opacity-60">
                 HOME
-              </a>
-              <a href="/" className="text-[10px] font-medium uppercase tracking-[0.15em] hover:opacity-60">
+              </Link>
+              <Link to="/all-clothing" className="text-[10px] font-medium uppercase tracking-[0.15em] hover:opacity-60">
                 ALL CLOTHING
-              </a>
-              <a href="#" className="text-[10px] font-medium uppercase tracking-[0.15em] hover:opacity-60">
+              </Link>
+              <Link to="/story" className="text-[10px] font-medium uppercase tracking-[0.15em] hover:opacity-60">
                 STORY
-              </a>
+              </Link>
             </nav>
 
             {/* Right Actions */}

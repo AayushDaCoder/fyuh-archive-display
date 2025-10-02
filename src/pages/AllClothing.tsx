@@ -4,7 +4,7 @@ import ProductGrid from "@/components/ProductGrid";
 import Footer from "@/components/Footer";
 import { useState } from "react";
 
-const Index = () => {
+const AllClothing = () => {
   const [selectedSize, setSelectedSize] = useState<string | null>(null);
 
   return (
@@ -19,4 +19,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default AllClothing;
