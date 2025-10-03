@@ -1,18 +1,22 @@
-import { ShoppingBag } from "lucide-react";
+import { ShoppingBag, Moon, Sun } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useTheme } from "next-themes";
+import { Switch } from "@/components/ui/switch";
 
 const Header = () => {
+  const { theme, setTheme } = useTheme();
+  
   return (
-    <header className="sticky top-0 z-50 bg-white text-[#1a1a1a]">
+    <header className="sticky top-0 z-50 bg-background text-foreground border-b border-border">
       {/* Announcement Bar */}
-      <div className="border-b border-[#e5e5e5] bg-[#3a3a3a] py-1.5 text-white">
+      <div className="border-b border-border bg-[#3a3a3a] py-1.5 text-white dark:bg-[#2a2a2a]">
         <p className="text-center text-[10px] font-medium uppercase tracking-[0.15em]">
           EXTENSION OF YOUR EXPRESSION
         </p>
       </div>
 
       {/* Main Header */}
-      <div className="border-b border-[#e5e5e5]">
+      <div>
         <div className="mx-auto max-w-[1600px] px-8">
           <div className="flex items-center justify-between py-3.5">
             {/* Logo */}
@@ -35,6 +39,15 @@ const Header = () => {
 
             {/* Right Actions */}
             <div className="flex items-center gap-4 md:gap-6">
+              <div className="flex items-center gap-2">
+                <Sun className="h-3.5 w-3.5" />
+                <Switch
+                  checked={theme === "dark"}
+                  onCheckedChange={(checked) => setTheme(checked ? "dark" : "light")}
+                  aria-label="Toggle theme"
+                />
+                <Moon className="h-3.5 w-3.5" />
+              </div>
               <a href="#" className="text-[10px] font-medium uppercase tracking-[0.15em] hover:opacity-60">
                 LOGIN
               </a>
