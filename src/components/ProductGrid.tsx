@@ -19,7 +19,7 @@ const ProductGrid = ({ selectedSize }: ProductGridProps) => {
     : products;
 
   return (
-    <section className="bg-white py-8">
+    <section className="bg-background py-8">
       <div className="mx-auto max-w-[1600px] px-8">
         <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
           {filteredProducts.map((product) => (

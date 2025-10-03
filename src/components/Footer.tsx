@@ -2,27 +2,27 @@ import { Instagram, Facebook, Twitter } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="border-t border-[#e5e5e5] bg-white">
+    <footer className="border-t border-border bg-card">
       <div className="mx-auto max-w-[1600px] px-8 py-12">
         <div className="grid grid-cols-4 gap-12">
           {/* Column 1: About */}
           <div>
-            <h3 className="mb-4 text-[10px] font-semibold uppercase tracking-[0.12em] text-[#1a1a1a]">
+            <h3 className="mb-4 text-[10px] font-semibold uppercase tracking-[0.12em] text-foreground">
               ABOUT
             </h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-[10px] uppercase tracking-[0.1em] text-[#666] hover:text-[#1a1a1a]">
+                <a href="#" className="text-[10px] uppercase tracking-[0.1em] text-muted-foreground hover:text-foreground">
                   OUR STORY
                 </a>
               </li>
               <li>
-                <a href="#" className="text-[10px] uppercase tracking-[0.1em] text-[#666] hover:text-[#1a1a1a]">
+                <a href="#" className="text-[10px] uppercase tracking-[0.1em] text-muted-foreground hover:text-foreground">
                   CAREERS
                 </a>
               </li>
               <li>
-                <a href="#" className="text-[10px] uppercase tracking-[0.1em] text-[#666] hover:text-[#1a1a1a]">
+                <a href="#" className="text-[10px] uppercase tracking-[0.1em] text-muted-foreground hover:text-foreground">
                   SUSTAINABILITY
                 </a>
               </li>
@@ -31,22 +31,22 @@ const Footer = () => {
 
           {/* Column 2: Help */}
           <div>
-            <h3 className="mb-4 text-[10px] font-semibold uppercase tracking-[0.12em] text-[#1a1a1a]">
+            <h3 className="mb-4 text-[10px] font-semibold uppercase tracking-[0.12em] text-foreground">
               HELP
             </h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-[10px] uppercase tracking-[0.1em] text-[#666] hover:text-[#1a1a1a]">
+                <a href="#" className="text-[10px] uppercase tracking-[0.1em] text-muted-foreground hover:text-foreground">
                   SHIPPING
                 </a>
               </li>
               <li>
-                <a href="#" className="text-[10px] uppercase tracking-[0.1em] text-[#666] hover:text-[#1a1a1a]">
+                <a href="#" className="text-[10px] uppercase tracking-[0.1em] text-muted-foreground hover:text-foreground">
                   RETURNS
                 </a>
               </li>
               <li>
-                <a href="#" className="text-[10px] uppercase tracking-[0.1em] text-[#666] hover:text-[#1a1a1a]">
+                <a href="#" className="text-[10px] uppercase tracking-[0.1em] text-muted-foreground hover:text-foreground">
                   CONTACT US
                 </a>
               </li>
@@ -55,17 +55,17 @@ const Footer = () => {
 
           {/* Column 3: Legal */}
           <div>
-            <h3 className="mb-4 text-[10px] font-semibold uppercase tracking-[0.12em] text-[#1a1a1a]">
+            <h3 className="mb-4 text-[10px] font-semibold uppercase tracking-[0.12em] text-foreground">
               LEGAL
             </h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-[10px] uppercase tracking-[0.1em] text-[#666] hover:text-[#1a1a1a]">
+                <a href="#" className="text-[10px] uppercase tracking-[0.1em] text-muted-foreground hover:text-foreground">
                   PRIVACY POLICY
                 </a>
               </li>
               <li>
-                <a href="#" className="text-[10px] uppercase tracking-[0.1em] text-[#666] hover:text-[#1a1a1a]">
+                <a href="#" className="text-[10px] uppercase tracking-[0.1em] text-muted-foreground hover:text-foreground">
                   TERMS OF SERVICE
                 </a>
               </li>
@@ -74,28 +74,28 @@ const Footer = () => {
 
           {/* Column 4: Social */}
           <div>
-            <h3 className="mb-4 text-[10px] font-semibold uppercase tracking-[0.12em] text-[#1a1a1a]">
+            <h3 className="mb-4 text-[10px] font-semibold uppercase tracking-[0.12em] text-foreground">
               FOLLOW US
             </h3>
             <div className="flex gap-4">
               <a
                 href="#"
                 aria-label="Instagram"
-                className="text-[#1a1a1a] hover:opacity-60 transition-opacity"
+                className="text-foreground hover:opacity-60 transition-opacity"
               >
                 <Instagram className="h-4 w-4" />
               </a>
               <a
                 href="#"
                 aria-label="Facebook"
-                className="text-[#1a1a1a] hover:opacity-60 transition-opacity"
+                className="text-foreground hover:opacity-60 transition-opacity"
               >
                 <Facebook className="h-4 w-4" />
               </a>
               <a
                 href="#"
                 aria-label="Twitter"
-                className="text-[#1a1a1a] hover:opacity-60 transition-opacity"
+                className="text-foreground hover:opacity-60 transition-opacity"
               >
                 <Twitter className="h-4 w-4" />
               </a>
@@ -104,8 +104,8 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 border-t border-[#e5e5e5] pt-6">
-          <p className="text-center text-[9px] uppercase tracking-[0.12em] text-[#666]">
+        <div className="mt-12 border-t border-border pt-6">
+          <p className="text-center text-[9px] uppercase tracking-[0.12em] text-muted-foreground">
             © 2025 FYUH. ALL RIGHTS RESERVED.
           </p>
         </div>

@@ -22,14 +22,14 @@ const Home = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#f5f5f5]">
+    <div className="min-h-screen bg-background">
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="bg-[#f5f5f5] py-12 md:py-16">
+        <section className="bg-background py-12 md:py-16">
           <div className="mx-auto max-w-[1600px] px-8">
-            <div className="flex aspect-video items-center justify-center bg-[#2a2a2a]">
-              <span className="text-[10px] font-medium uppercase tracking-[0.15em] text-white opacity-30">
+            <div className="flex aspect-video items-center justify-center bg-card">
+              <span className="text-[10px] font-medium uppercase tracking-[0.15em] text-muted-foreground opacity-30">
                 VIDEO PLACEHOLDER
               </span>
             </div>
@@ -37,13 +37,13 @@ const Home = () => {
         </section>
 
         {/* Latest Drop Section */}
-        <section className="bg-[#f5f5f5] py-8">
+        <section className="bg-background py-8">
           <div className="mx-auto max-w-[1600px] px-8">
             <div className="mb-6 flex items-center justify-between">
-              <h2 className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#1a1a1a]">
+              <h2 className="text-[11px] font-semibold uppercase tracking-[0.12em] text-foreground">
                 LATEST DROP
               </h2>
-              <a href="/all-clothing" className="text-[10px] font-medium uppercase tracking-[0.12em] text-[#1a1a1a] hover:opacity-60">
+              <a href="/all-clothing" className="text-[10px] font-medium uppercase tracking-[0.12em] text-foreground hover:opacity-60">
                 EXPLORE ITEM
               </a>
             </div>
@@ -62,7 +62,7 @@ const Home = () => {
                     </span>
                   </div>
                   <div className="mt-2 text-center">
-                    <p className="text-[10px] uppercase tracking-[0.12em] text-[#1a1a1a]">
+                    <p className="text-[10px] uppercase tracking-[0.12em] text-foreground">
                       {product.price}
                     </p>
                   </div>
@@ -73,11 +73,11 @@ const Home = () => {
         </section>
 
         {/* Regular Tees Button */}
-        <section className="bg-[#f5f5f5] py-8">
+        <section className="bg-background py-8">
           <div className="mx-auto max-w-[1600px] px-8 text-center">
             <Button
               variant="outline"
-              className="border-[#1a1a1a] bg-transparent px-8 py-2 text-[10px] font-medium uppercase tracking-[0.15em] text-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white"
+              className="px-8 py-2 text-[10px] font-medium uppercase tracking-[0.15em]"
             >
               REGULAR TEES
             </Button>
@@ -85,13 +85,13 @@ const Home = () => {
         </section>
 
         {/* Popular Picks Section */}
-        <section className="bg-[#f5f5f5] py-8">
+        <section className="bg-background py-8">
           <div className="mx-auto max-w-[1600px] px-8">
             <div className="mb-6 flex items-center justify-between">
-              <h2 className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#1a1a1a]">
+              <h2 className="text-[11px] font-semibold uppercase tracking-[0.12em] text-foreground">
                 POPULAR PICKS
               </h2>
-              <a href="/all-clothing" className="text-[10px] font-medium uppercase tracking-[0.12em] text-[#1a1a1a] hover:opacity-60">
+              <a href="/all-clothing" className="text-[10px] font-medium uppercase tracking-[0.12em] text-foreground hover:opacity-60">
                 EXPLORE ITEM
               </a>
             </div>
@@ -110,7 +110,7 @@ const Home = () => {
                     </span>
                   </div>
                   <div className="mt-2 text-center">
-                    <p className="text-[10px] uppercase tracking-[0.12em] text-[#1a1a1a]">
+                    <p className="text-[10px] uppercase tracking-[0.12em] text-foreground">
                       {product.price}
                     </p>
                   </div>
