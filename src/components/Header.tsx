@@ -11,7 +11,7 @@ const Header = () => {
       {/* Announcement Bar */}
       <div className="border-b border-border bg-[#3a3a3a] py-1.5 text-white dark:bg-[#2a2a2a]">
         <p className="text-center text-[10px] font-medium uppercase tracking-[0.15em]">
-          EXTENSION OF YOUR EXPRESSION
+          FUEL YOUR UNSTOPPABLE HUSTLE
         </p>
       </div>
 
