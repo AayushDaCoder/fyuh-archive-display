@@ -1,13 +1,18 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const Story = () => {
+  const heroRef = useScrollAnimation();
+  const contentRef = useScrollAnimation();
+  const valuesRef = useScrollAnimation();
+  const ctaRef = useScrollAnimation();
   return (
     <div className="min-h-screen bg-background">
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="border-b border-border bg-background py-16 md:py-24">
+        <section ref={heroRef} className="border-b border-border bg-background py-16 md:py-24">
           <div className="mx-auto max-w-[900px] px-8">
             <h1 className="text-center text-[18px] md:text-[24px] font-bold uppercase tracking-[0.3em] text-foreground">
               About our Concept
@@ -16,7 +21,7 @@ const Story = () => {
         </section>
 
         {/* Story Content */}
-        <section className="bg-background py-16 md:py-24">
+        <section ref={contentRef} className="bg-background py-16 md:py-24">
           <div className="mx-auto max-w-[900px] px-8">
             <div className="space-y-8 md:space-y-12">
               {/* First Paragraph */}
@@ -54,7 +59,7 @@ const Story = () => {
         </section>
 
         {/* Brand Values Section */}
-        <section className="border-t border-border bg-secondary/30 py-16 md:py-24">
+        <section ref={valuesRef} className="border-t border-border bg-secondary/30 py-16 md:py-24">
           <div className="mx-auto max-w-[1200px] px-8">
             <div className="grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-8">
               {/* Value 1 */}
@@ -91,7 +96,7 @@ const Story = () => {
         </section>
 
         {/* Call to Action */}
-        <section className="border-t border-border bg-background py-16 md:py-20">
+        <section ref={ctaRef} className="border-t border-border bg-background py-16 md:py-20">
           <div className="mx-auto max-w-[900px] px-8 text-center">
             <h2 className="mb-6 text-[14px] md:text-[16px] font-bold uppercase tracking-[0.25em] text-foreground">
               Explore the Collection

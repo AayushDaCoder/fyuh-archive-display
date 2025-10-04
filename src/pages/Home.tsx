@@ -1,8 +1,13 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const Home = () => {
+  const heroRef = useScrollAnimation();
+  const latestRef = useScrollAnimation();
+  const regularRef = useScrollAnimation();
+  const popularRef = useScrollAnimation();
   const latestProducts = [
     { id: 1, color: "#1a1a1a", label: "PRODUCT IMAGE", price: "$45.00" },
     { id: 2, color: "#5d4e4a", label: "PRODUCT IMAGE", price: "$45.00" },
@@ -26,7 +31,7 @@ const Home = () => {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="bg-background py-12 md:py-16">
+        <section ref={heroRef} className="bg-background py-12 md:py-16">
           <div className="mx-auto max-w-[1600px] px-8">
             <div className="flex aspect-video items-center justify-center bg-card">
               <span className="text-[10px] font-medium uppercase tracking-[0.15em] text-muted-foreground opacity-30">
@@ -37,7 +42,7 @@ const Home = () => {
         </section>
 
         {/* Latest Drop Section */}
-        <section className="bg-background py-8">
+        <section ref={latestRef} className="bg-background py-8">
           <div className="mx-auto max-w-[1600px] px-8">
             <div className="mb-6 flex items-center justify-between">
               <h2 className="text-[11px] font-semibold uppercase tracking-[0.12em] text-foreground">
@@ -73,7 +78,7 @@ const Home = () => {
         </section>
 
         {/* Regular Tees Button */}
-        <section className="bg-background py-8">
+        <section ref={regularRef} className="bg-background py-8">
           <div className="mx-auto max-w-[1600px] px-8 text-center">
             <Button
               variant="outline"
@@ -85,7 +90,7 @@ const Home = () => {
         </section>
 
         {/* Popular Picks Section */}
-        <section className="bg-background py-8">
+        <section ref={popularRef} className="bg-background py-8">
           <div className="mx-auto max-w-[1600px] px-8">
             <div className="mb-6 flex items-center justify-between">
               <h2 className="text-[11px] font-semibold uppercase tracking-[0.12em] text-foreground">
