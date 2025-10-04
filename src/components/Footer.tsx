@@ -1,8 +1,11 @@
 import { Instagram, Facebook, Twitter } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const Footer = () => {
+  const footerRef = useScrollAnimation<HTMLElement>();
+  
   return (
-    <footer className="border-t border-border bg-card">
+    <footer ref={footerRef} className="border-t border-border bg-card">
       <div className="mx-auto max-w-[1600px] px-8 py-12">
         <div className="grid grid-cols-4 gap-12">
           {/* Column 1: About */}

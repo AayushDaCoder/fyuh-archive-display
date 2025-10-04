@@ -10,14 +10,14 @@ export const useScrollAnimation = <T extends HTMLElement = HTMLElement>(threshol
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          element.classList.add("animate-fade-in");
-          element.classList.remove("opacity-0");
+          element.classList.add("animate-float-up");
+          element.classList.remove("opacity-0", "translate-y-8");
         }
       },
       { threshold }
     );
 
-    element.classList.add("opacity-0");
+    element.classList.add("opacity-0", "translate-y-8");
     observer.observe(element);
 
     return () => observer.disconnect();

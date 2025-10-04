@@ -1,3 +1,5 @@
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+
 const products = [
   { id: 1, color: "#3a3a3a", label: "PRODUCT IMAGE", sizes: ["XS", "S", "M"] },
   { id: 2, color: "#6b1f1f", label: "PRODUCT IMAGE", sizes: ["M", "L", "XL"] },
@@ -14,6 +16,7 @@ interface ProductGridProps {
 }
 
 const ProductGrid = ({ selectedSize }: ProductGridProps) => {
+  const gridRef = useScrollAnimation<HTMLDivElement>();
   const filteredProducts = selectedSize
     ? products.filter((product) => product.sizes.includes(selectedSize))
     : products;
@@ -21,7 +24,7 @@ const ProductGrid = ({ selectedSize }: ProductGridProps) => {
   return (
     <section className="bg-background py-8">
       <div className="mx-auto max-w-[1600px] px-8">
-        <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
+        <div ref={gridRef} className="grid grid-cols-2 gap-4 lg:grid-cols-4">
           {filteredProducts.map((product) => (
             <article
               key={product.id}
