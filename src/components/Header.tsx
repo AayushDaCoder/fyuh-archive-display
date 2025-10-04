@@ -35,6 +35,9 @@ const Header = () => {
               <Link to="/story" className="text-[10px] font-medium uppercase tracking-[0.15em] hover:opacity-60">
                 STORY
               </Link>
+              <Link to="/faq" className="text-[10px] font-medium uppercase tracking-[0.15em] hover:opacity-60">
+                FAQ
+              </Link>
             </nav>
 
             {/* Right Actions */}
